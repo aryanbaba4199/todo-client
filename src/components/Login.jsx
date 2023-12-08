@@ -6,9 +6,6 @@ function Login() {
     const [formData, setFormData] = useState({});
     const { userToken, tokenDispatch, userDispatch } = useContext(TokenContext);
     const [error, setError] = useState();
-
-
-    //-----------Handling User Sign in --------
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
